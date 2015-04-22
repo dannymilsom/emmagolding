@@ -32,3 +32,10 @@ indexes:
   properties:
   - name: app
   - name: name
+
+- kind: news_article
+  properties:
+  - name: created
+    direction: desc
+  - name: __key__
+    direction: desc

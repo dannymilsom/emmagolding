@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+Articles
+{% endblock %}
+
+{% block main %}
+  {% for article in news_articles %}
+    {{ article }}
+   {% endfor %}
+{% endblock %}
