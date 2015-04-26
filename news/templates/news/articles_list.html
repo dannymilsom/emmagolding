@@ -1,11 +1,32 @@
 {% extends "base.html" %}
 
 {% block title %}
-Articles
+News - Articles
+{% endblock %}
+
+{% block banner %}
+<div class="row">
+    <span class="col-xs-12">News</span>
+</div>
 {% endblock %}
 
 {% block main %}
-  {% for article in news_articles %}
-    {{ article }}
-   {% endfor %}
+    <div class="container">
+      {% for article in news_articles %}
+      <div class="row article-summary">
+        <div class="article-meta">
+            <div class="article-date col-xs-3 col-lg-2">
+                <span>{{ article.created }}</span>
+            </div>
+            <div class="article-title col-xs-9 col-lg-10">
+                <a href={% url 'display_article' article.slug %}>{{ article.title }}</a>
+            </div>
+        </div>
+        <div class="article-content col-xs-12 col-lg-offset-2 col-lg-10">
+            {{ article.message }}
+        </div>
+      </div>
+        
+      {% endfor %}
+    </div>
 {% endblock %}

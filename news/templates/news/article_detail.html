@@ -1,9 +1,29 @@
 {% extends "base.html" %}
 
 {% block title %}
-News - Article
+{{ news_article.title }}
+{% endblock %}
+
+{% block banner %}
+<div class="row">
+	<span class="col-xs-12">News</span>
+</div>
 {% endblock %}
 
 {% block main %}
-    {{ news_article }}
+    <div class="container">
+      <div class="row article-summary">
+        <div class="article-meta">
+            <div class="article-date col-xs-3 col-lg-2">
+                <span>{{ news_article.created }}</span>
+            </div>
+            <div class="article-title col-xs-9 col-lg-10">
+                <span>{{ news_article.title }}</span>
+            </div>
+        </div>
+        <div class="article-content col-xs-12 col-lg-offset-2 col-lg-10">
+            {{ news_article.message }}
+        </div>
+      </div>
+    </div>
 {% endblock %}

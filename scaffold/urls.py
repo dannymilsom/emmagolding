@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic import TemplateView
 
 import session_csrf
 session_csrf.monkeypatch()
@@ -9,8 +10,7 @@ admin.autodiscover()
 from news.urls import news_router
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'scaffold.views.home', name='home'),
+    url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
     url(r'^news/', include('news.urls')),
     url(r'^_ah/', include('djangae.urls')),
 
