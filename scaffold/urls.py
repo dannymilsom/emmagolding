@@ -6,6 +6,8 @@ session_csrf.monkeypatch()
 from django.contrib import admin
 admin.autodiscover()
 
+from news.urls import news_router
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'scaffold.views.home', name='home'),
@@ -17,3 +19,6 @@ urlpatterns = patterns('',
 
     url(r'^csp/', include('cspreports.urls')),
 )
+
+# additional REST endpoints
+urlpatterns += news_router.urls

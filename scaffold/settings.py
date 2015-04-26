@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'djangosecure',
     'csp',
     'cspreports',
+    'rest_framework',
     'djangae.contrib.gauth',
     'djangae.contrib.security',
     'news',
