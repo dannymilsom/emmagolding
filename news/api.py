@@ -5,7 +5,7 @@ from news.serializers import ArticleSerializer
 
 
 class ArticleViewSet(ModelViewSet):
-	"""Basic Article viewset for use with SimpleRouter"""
+    """Basic Article viewset for use with SimpleRouter"""
 
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
