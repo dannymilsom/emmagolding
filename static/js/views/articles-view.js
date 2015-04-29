@@ -1,4 +1,9 @@
-define(['jquery', 'underscore', 'backbone', 'collections/articles', 'views/article-preview-view'], function($, _, Backbone, Articles, ArticlePreview) {
+define(['jquery',
+        'underscore',
+        'backbone',
+        'collections/articles',
+        'views/article-preview-view'
+        ], function($, _, Backbone, Articles, ArticlePreview) {
 
   var ArticlesView = Backbone.View.extend({
     el: '#main-container',
