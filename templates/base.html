@@ -20,16 +20,18 @@
     {% include 'snippets/nav.html' %}
   </head>
   <body>
-    <nav class="navbar" role="navigation"></nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <i class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+    <div id="wrapper">
+        <nav class="navbar navbar-fixed-top" role="navigation"></nav>
+        <div id="loading-spinner" class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <i class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+                </div>
             </div>
         </div>
+        <div id="main-container"></div>
     </div>
-    <div id="main-container"></div>
-    </div>
+    {% include 'footer.html' %}
     <script src="{% static 'js/libs/require.js' %}" data-main="{% static 'js/main.js' %}"></script>
   </body>
 </html>

@@ -1,33 +1,28 @@
 <script type="text/template" id="homepage-template">
-<div class="container">
-    <h1 class="text-center">Emma Golding - Textile Designer</h1>
-</div>
-<section id="carousel-container">
+<div id="homepage-banner">
     <div class="container">
         <div class="row">
-            <div id="homepage-carousel" class="carousel slide" data-interval="2000" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homepage-carousel" data-slide-to="1"></li>
-                    <li data-target="#homepage-carousel" data-slide-to="2"></li>
-                </ol>   
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <img class="col-xs-12 col-md-8 col-md-offset-2"
-                             src="{{STATIC_URL}}img/cushions.jpg"/>
-                    </div>
-                    <div class="item">
-                        <img class="col-xs-12 col-md-8 col-md-offset-2"
-                             src="{{STATIC_URL}}img/workspace.jpg"/>
-                    </div>
-                    <div class="item">
-                        <img class="col-xs-12 col-md-8 col-md-offset-2"
-                             src="{{STATIC_URL}}img/organzacotton.jpg"/>
-                    </div>
-                </div>
-            </div>
+            <h1>Emma Golding</h1>
         </div>
     </div>
+</div>
+<section id="about-emma">
+    <div class="container">
+        <h2>A Little About Me</h2>
+        <p class="col-xs-12 col-md-8 col-md-offset-2">
+            Gurt big deserunt pariatur tempor, voluptate kinave it ea. Proident sed he dos it, 
+            innum all right me luvver kinave it yer were bis to voluptate officia ut laboris 
+            alright me babber ee oo done it. Safternun consequat wheres attoo, dolore non lush 
+            ut keener idut ceptible ohm anim discolated irure oozee. Safternun dolore gurt lush, 
+            dollop as-dal cillum plasterscene ginormous deserunt eu idut masarge. Dint qui 
+            excepteur zat alright.
+        </p>
+        <p class="col-xs-12 col-md-8 col-md-offset-2">
+            All right me luvver ipsum dolor sit amet member stension lead as-dal masarge tamorra. Fugiat yer wheres attoo consectetur gashead luvver sint deserunt you gone and done it incididunt amblance cupidatat ad ea inchew. Sunt stension lead gashead proident. Tight tiz pacifically, adipisicing commodo cheers drive almunsbree ohm plasterscene gurt big reprehenderit kinave it. Commodo chimley theys gashead gurt big magna irure, est hark at ee fornbree listen to yourself do aarsh. Dollop dolore et eiusmod sunt cheers drive eu stension lead quicken cillum dint incididunt masarge. Ut laboris keener oozee sed nostrud.
+        </p>
+    </div>
+</section>
+<section id="graduation">
 </section>
 <section id="homepage-text">
     <div class="container">
@@ -39,6 +34,9 @@
             ut keener idut ceptible ohm anim discolated irure oozee. Safternun dolore gurt lush, 
             dollop as-dal cillum plasterscene ginormous deserunt eu idut masarge. Dint qui 
             excepteur zat alright.
+        </p>
+        <p class="col-xs-12 col-md-8 col-md-offset-2">
+            All right me luvver ipsum dolor sit amet member stension lead as-dal masarge tamorra. Fugiat yer wheres attoo consectetur gashead luvver sint deserunt you gone and done it incididunt amblance cupidatat ad ea inchew. Sunt stension lead gashead proident. Tight tiz pacifically, adipisicing commodo cheers drive almunsbree ohm plasterscene gurt big reprehenderit kinave it. Commodo chimley theys gashead gurt big magna irure, est hark at ee fornbree listen to yourself do aarsh. Dollop dolore et eiusmod sunt cheers drive eu stension lead quicken cillum dint incididunt masarge. Ut laboris keener oozee sed nostrud.
         </p>
     </div>
 </section>
@@ -54,23 +52,32 @@
     <div class="container">
         <div class="row">
             <h2>Lets Talk</h2>
-            <ul id="social-icons">
+            <ul id="social-icons" class="col-xs-12">
                 <li>
                   <a class="fa-stack fa-lg" href="{{ LINKEDIN_URL }}"
                      target="_blank" title="Linkedin Profile">
-                    <i class="fa fa-linkedin fa-2x fa-stack-2x fa-inverse"></i>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-linkedin fa-stack-1x"></i>
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a class="fa-stack fa-lg" href="{{ TWITTER_URL }}"
                      target="_blank" title="Twitter Account">
-                    <i class="fa fa-twitter fa-2x fa-stack-2x fa-inverse"></i>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a class="fa-stack fa-lg" href="{{ INSTAGRAM_URL }}"
                      target="_blank" title="Instagram Account">
-                    <i class="fa fa-instagram fa-2x fa-stack-2x fa-inverse"></i>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x"></i>
+                    </span>
                   </a>
                 </li>
             </ul>

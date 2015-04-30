@@ -1,8 +1,54 @@
+html {
+    height: 100%;
+}
+
 body {
     background: #ecf0f1;
     color: #374e64;
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 { text-align: center; }
+
+#wrapper { min-height: 100%; }
+
+#main-container { 
+    overflow:auto;
+    padding-bottom: 100px;
+}
+
+#loading-spinner {
+    position: absolute;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+}
+
+#homepage-banner {
+    background: url('/static/img/devore.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 40vh 0;
+    text-align: center;
+}
+
+#homepage-banner h1 {
+    margin: 0;
+    color: #16a085;
+    border: 3px solid #16a085;
+    padding: 20px 40px;
+    letter-spacing: 5px;
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .article-date {
@@ -14,6 +60,7 @@ body {
     text-align: center;
     border-bottom: 10px solid #16a085;
 }
+
 .article-title {
     text-transform: uppercase;
     font-size: 20px;
@@ -21,6 +68,7 @@ body {
     border-bottom: 10px solid #16a085;
     max-width: 100%;
 }
+
 .article-link {
     max-width: 100%;
     display: inline-block;
@@ -28,8 +76,15 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .article-content { padding: 20px 10px; }
+
 .article-summary { margin: 20px 0; }
+
+#about-emma {
+    padding: 40px 0 60px 0;
+}
+
 #homepage-text {
     text-align: center;
     color: #fff;
@@ -37,17 +92,39 @@ body {
     background-color: #00945e;
     background-image: url(/static/img/heart.jpg);
 }
-#carousel-container { margin: 40px 0 60px 0; }
+
+#passionate-text {
+    text-align: center;
+    color: #2c3e50;
+    padding: 40px 0 60px 0;
+    background-color: #00945e;
+    background-image: url(/static/img/organzacotton.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#graduation {
+    background-image: url(/static/img/graduation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
 #blog-latest {
     text-align: center;
     margin: 40px 0 60px 0;
 }
+
 .article-intro {
     overflow: hidden;
     height: 200px;
     margin-top: 20px;
 }
+
 .article-preview { list-style-type: none; }
+
 .read-more {
     color: #fff;
     background-color: #16a085;
@@ -55,7 +132,9 @@ body {
     border: 1px solid #16a085;
     border-radius: 3px;
 }
+
 .read-more a { color: #fff; }
+
 .full-screen {
     height: 100vh;
     background-size: cover;
@@ -63,25 +142,45 @@ body {
     background-repeat: no-repeat;
     background-image: url(/static/img/organzacotton.jpg);
 }
+
 #contact-emma {
     color: #fff;
     background-color: #374e64;
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
 }
+
 #social-icons {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
     margin-top: 20px;
 }
+
 #social-icons li {
     display: inline;
     padding: 0 40px;
 }
 
+footer {
+    position: relative;
+    margin-top: -100px; /* negative value of footer height */
+    height: 100px;
+    clear:both;
+    padding-top: 40px;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 /* Bootstrap elements */
+nav.navbar { margin-bottom: 0; }
 .navbar { background-color: #16a085; }
-.navbar-right a { color: #FFF; }
-.navbar-toggle { background-color: #16a085; }
-.navbar .icon-bar { background-color: #FFF; }
+.navbar-right a { color: #fff; }
+.navbar .icon-bar { background-color: #fff; }
